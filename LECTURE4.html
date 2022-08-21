@@ -1,0 +1,100 @@
+--- App.js
+import './Appa.css';
+
+let name = "React!!";
+function App() {
+  return (
+    <>
+      <nav className='container'>
+         <div className="left">TEXTUTILS</div>
+
+         <div className="right">
+               <li>Home</li>
+               <li>About</li>
+               <li>Services</li>
+               <li>Contact</li>
+         </div>        
+      </nav>
+
+      <div className='box'>
+          <h1>Hello {name}</h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, hic natus quos earum id suscipit, quia dolores excepturi ducimus inventore quaerat aliquam vero eius libero vitae est vel! Libero, accusamus!
+      </div>
+    </>
+  );
+}
+export default App;
+
+
+
+
+
+--App.css
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.blank{
+  background-color: chocolate;
+  color: #fff;
+}
+.container{
+  display: flex;
+  background-color: #282c34;
+  color: #fff;
+  justify-content: space-between;
+}
+.right{
+  display: flex;
+  margin-right: 100px;
+  padding: 20px;
+}
+
+li{
+  list-style-type:none;
+  font-size: medium;
+  font-weight: 500;
+  margin-right: 29px;
+}
+.left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  font-weight: 700;
+}
+
